@@ -15,33 +15,36 @@ using namespace std;
 underGrad::underGrad(){}
 underGrad::underGrad(std::string ltName, std::string ftName, std::string stID, std::string majCodes, double grpa, double charg, double finAid, std::string advisor, sStat status)
 {
-        student::setName(ltName, ftName);
-        student::setID(stID);
-        student::expandMajorCode(majCodes);
-        student::setGPA(grpa);
-        money::setCharges(charg,finAid);
-        underGrad::setAdvisor(advisor);
-        underGrad::setStatus(status);
+    //constructors
+        student::setName(ltName, ftName);//from student 
+        student::setID(stID);//from student
+        student::expandMajorCode(majCodes);//from student
+        student::setGPA(grpa);//from student
+        money::setCharges(charg,finAid);//from money 
+        underGrad::setAdvisor(advisor);//from underGrad
+        underGrad::setStatus(status);//from underGrad
         showStudent();
 }
 string underGrad::getAdvisor() const
 {
+    //return the advisor
     return advisor;
 }
 underGrad::sStat underGrad::getStatus() const
 {
-    return Status;
+    return Status;//return status
 }
 void underGrad::setAdvisor(string sAdvisor)
 {
-    advisor = sAdvisor;
+    advisor = sAdvisor;//passed value set 
 }
 void underGrad::setStatus(sStat status)
 {
-    Status = status;
+    Status = status;//passed value set
 }
 void underGrad::showStudent()
-{
+{ 
+    //display summary based on the format
         std::string indent(5, ' ');
     std::string bars;
     bars.append(70, '-');

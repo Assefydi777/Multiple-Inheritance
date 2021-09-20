@@ -1,3 +1,9 @@
+/*
+Name: Ydidiya Assefa, NSHE 2001132517, CS202-1001 Fall 2021, ASSIGNMENT 3
+Description: <Design and implement three C++ classes to provide student >
+Input: < student name Id finances, major code>
+Output: < student summary>
+*/
 #include <iostream>
 #include <string>
 #include <iomanip>     //set precision library
