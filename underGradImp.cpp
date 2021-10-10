@@ -8,7 +8,7 @@ Output: < student summary>
 #include <string>
 #include <iomanip>
 #include <fstream>
-#include "undergrad.h"
+#include "underGrad.h"
 #include "student.h"
 #include "money.h"
 using namespace std;
